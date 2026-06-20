@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Life Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div>
+        <h1 id="greeting">Hello</h1>
+        <input type="text" id="username" placeholder="Your name">
+        <button id="saveName">Save</button>
+    </div>
+
+    <div>
+        <h2 id="clock"></h2>
+        <p id="date"></p>
+    </div>
+</header>
+
+<button id="themeToggle">🌙 Toggle Theme</button>
+
+<div class="container">
+
+    <section class="card">
+        <h2>Focus Timer</h2>
+        <h1 id="timer">25:00</h1>
+
+        <div class="buttons">
+            <button id="startBtn">Start</button>
+            <button id="stopBtn">Stop</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>To-Do List</h2>
+
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Add task">
+            <button id="addTask">Add</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </section>
+
+</div>
+
+<section class="card links-card">
+    <h2>Quick Links</h2>
+
+    <input type="text" id="linkName" placeholder="Website Name">
+    <input type="url" id="linkUrl" placeholder="https://">
+
+    <button id="addLink">Add Link</button>
+
+    <div id="linksContainer"></div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
